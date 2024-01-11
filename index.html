@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>EcoleDirecte</title>
+    <meta
+      name="description"
+      content="EcoleDirecte : Bienvenue sur le site internet EcoleDirecte. Espace famille, élève, personnel, enseignant ..."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+
+    <base href="/" />
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      href="assets/icones/manifest/apple-touch-icon.png"
+      rel="apple-touch-icon"
+      sizes="180x180"
+    />
+    <link rel="manifest" href="manifest.json" />
+    <link
+      href="assets/icones/manifest/safari-pinned-tab.svg"
+      rel="mask-icon"
+      color="#5bbad5"
+    />
+    <meta name="apple-mobile-web-app-title" content="Mon EcoleDirecte" />
+    <meta name="application-name" content="EcoleDirecte" />
+    <meta name="apple-itunes-app" content="app-id=1296851886" />
+
+    <!--
+            Inclusion de la librairie MathJax pour avoir la notation LaTex
+            Pour le moment comme il n'existe pas de module node importable dans le code (v3 ?),
+            mise en place du rep de la librairie dans /assets et suppression de plein de rep/fichiers normalement inutils afin d'alléger le poids
+            Plus d'infos sur https://docs.mathjax.org/en/latest/options/index.html#configuration
+        -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+          availableFonts: ["TeX"],
+          imageFont: null,
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX","output/HTML-CSS"],
+          tex2jax: {
+          inlineMath: [['$','$'], ['\\(','\\)']],
+          preview: "none"
+          },
+          "HTML-CSS": { availableFonts: ["TeX"] },
+          messageStyle: "none",
+          showLocale: false,
+          showProcessingMessages: false
+      });
+    </script>
+
+    <script
+      async=""
+      src="assets/ext/mathjax279/MathJax.js?config=TeX-AMS_HTML&amp;locale=fr"
+    ></script>
+    <script async="" src="assets/ext/ckeditor416/ckeditor.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="styles.6c50c3752b750ce0.css"
+      media="print"
+      onload="this.media='all'"
+    />
+
+    <noscript>
+      <link rel="stylesheet" href="styles.6c50c3752b750ce0.css" />
+    </noscript>
+  </head>
+  <body>
+    <app-root></app-root>
+
+    <script src="runtime.8b0e17df7ebd59b4.js" type="module"></script>
+    <script src="polyfills.8c19fd4bc0b1ff88.js" type="module"></script>
+    <script src="scripts.8c966822050f071b.js" defer></script>
+    <script src="main.5a2771f5b114b8b9.js" type="module"></script>
+  </body>
+</html>
