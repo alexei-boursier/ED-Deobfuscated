@@ -1,1 +1,1 @@
-require("88583");
+import("/bundle/polyfills/angular.js");
