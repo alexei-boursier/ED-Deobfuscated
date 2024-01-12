@@ -1,0 +1,1 @@
+__webpack_module__.exports = typeof process !== "undefined" && i(process) == "process";
